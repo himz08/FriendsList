@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    height: 15Vh;
+    background-color: #df5a4a;
+    position: relative;
+}
+
+.manage-friends {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 33.3%);
+    margin-top: 5%;
+    row-gap: 10%;
+}
+
+.categpry-container {
+    // border: solid red;
+}
+
+@media screen and (max-width: 768px) {
+    .manage-friends {
+        grid-template-columns:repeat(2, 50%);
+    } 
+}
+
+@media screen and (max-width: 525px) {
+    .manage-friends {
+        grid-template-columns:repeat(1, 100%);
+        width: 98%;
+        
+    } 
+}

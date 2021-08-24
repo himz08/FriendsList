@@ -1,0 +1,10 @@
+<div class="main">
+    <div class="toolbar">
+        <app-friends-filter></app-friends-filter>
+    </div>
+    <div class="manage-friends">
+        <div class="categpry-container" *ngFor="let frnd of frndsDataObs | async">
+            <app-friends-category (action)="action($event)" [friendInfo]="frnd"></app-friends-category>
+        </div>
+    </div>
+</div>

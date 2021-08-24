@@ -1,0 +1,56 @@
+.card-box {
+    margin: 4% 1% ;
+    height: 70px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #FFFAFA;
+}
+
+.icon-block {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-info-block {
+    flex: 1;
+    // border: solid pink 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .name {
+        font-weight: 600;
+        font-size: 1rem;
+        // border: solid rgb(175, 100, 100) 1px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sub-title {
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: rgba($color: #000000, $alpha: 0.5);
+    }
+}
+
+.action-block {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    
+    .delete-iocn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .star-icon {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+svg:hover {
+    cursor: pointer;
+}
